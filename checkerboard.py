@@ -10,6 +10,10 @@ def index():
 def rows(num):
     return render_template('board.html', row=num,col=num)
 
+@app.route('/<int:x>/<int:y>')
+def row_col(x,y):
+    return render_template('board.html', row = x,col= y)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
