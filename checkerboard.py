@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('board.html', row = 8,col=8)
 
-@app.route('/<int:num')
+@app.route('/<int:num>')
 def rows(num):
     return render_template('board.html', row=num,col=num)
 
