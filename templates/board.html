@@ -16,14 +16,14 @@
       {% for i in range(0,row):%}
       <tr>
         {% for j in range(0,col):%}
-        <td class="blue" style="--color:{{color1}}"></td>
-        <td class="black" style="--color:{{color2}}"></td>
+        <td class="blue" style="--color2:{{color1}}"></td>
+        <td class="black" style="--color1:{{color2}}"></td>
         {%endfor%}
       </tr>
       <tr>
         {% for j in range(0,col):%}
-        <td class="black"></td>
-        <td class="blue"></td>
+        <td class="black" style="--color1:{{color2}}"></td>
+        <td class="blue" style="--color2:{{color1}}"></td>
         {%endfor%}
       </tr>
       {% endfor %}
