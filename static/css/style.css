@@ -6,10 +6,10 @@ td {
   height: 50px;
 }
 .black {
-  background-color: black;
+  background-color: var(--color2);
 }
 .blue {
-  background-color: blue;
+  background-color: var(--color1);
 }
 h1 {
   text-align: center;
