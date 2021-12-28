@@ -20,7 +20,7 @@ def row_col(x, y):
 
 @app.route('/<int:x>/<int:y>/<string:color1>/<string:color2>')
 def board_colors(x, y, color1, color2):
-    return render_template('board.html', row=x, col=y, color=color2, color=color1)
+    return render_template('board.html', row=x, col=y, color2=color2, color=color1)
 
 
 if __name__ == "__main__":
